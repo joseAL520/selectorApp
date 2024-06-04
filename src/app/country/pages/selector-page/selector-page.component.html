@@ -1,1 +1,22 @@
-<p>selector-page works!</p>
+
+<h1 class="mt-4">Selectors aninados</h1>
+<hr>
+
+
+<form [formGroup]="myForm" >
+    <!-- Por region -->
+    <div class="row mb-3">
+        <div class="col">
+            <label class="form-label"> Continente: </label>
+            <select formControlName="region" class="form-control">
+                <option value="">===Selecciones el continente===</option>
+            </select>
+        </div>
+    </div>
+
+</form>
+
+<h3>Formulario</h3>
+<code>
+    {{myForm.value | json}}
+</code>
